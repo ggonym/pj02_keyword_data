@@ -14,3 +14,6 @@ Windows: <가상환경_디렉토리_이름>\Scripts\activate
 deactivate 명령어 사용시 환경 종료 
 <br/>
 설치할 패키지가 있다면 pip install <패키지 이름>
+
+<br/>
+환경변수 만들기 (api key 보안)
