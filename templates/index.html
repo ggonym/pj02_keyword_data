@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Flask 첫 페이지</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--css, js 연결-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    
+    <!--plotly.js-->
+
+
+    <!-- bulma cdn-->
+     <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+    <!-- chart.js cdn-->
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+      
+</head>
+<body>
+  <!--https://wikidocs.net/83660-->
+  
+  <div class="block container pt-6 is-fluid">
+    <div class="content">
+  <h1 class="title is-3"> 검색어 순위 알아보기</h1>
+    <p>인기트렌드 키워드를 쉽고 빠르게 알려드려요</p>
+    </div>
+  
+    
+  </div>
+
+</body> 
+ 
+<div class="chart_ex">
+ <canvas id="myChart"></canvas>
+</div>
+ 
+ <script>
+  const ctx = document.getElementById('myChart');
+
+  new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+      datasets: [{
+        label: '# of Votes',
+        data: [12, 19, 3, 5, 2, 3],
+        borderWidth: 1
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  });
+</script>
+
+<!--https://miki3079.tistory.com/104-->
+
+
+
+   
+
+
+</html>
