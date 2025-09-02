@@ -4,6 +4,9 @@ python -m venv .venv 가상환경 설치(.venv는 일반적으로 사용되는 �
 <br/>
 pip install flask 설치하기
 **flask run 방법**
+flask run 하면 활성화
+
+
 python app.py 
 종료는 ctrl + c 
 <br/>
