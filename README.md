@@ -20,3 +20,8 @@ deactivate 명령어 사용시 환경 종료
 
 <br/>
 환경변수 만들기 (api key 보안)
+
+
+!! flask에서 templates 폴더명사용 자동으로 읽어오기 때문에
+</br>
+app.py 에서 불러올 때는 render_template 라고 사용 s 오타 주의
